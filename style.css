@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #fff;
+}
+
+.jumbotron {
+	margin-bottom: 0px;
+	height: 100vh;
+	min-height: 700px;
+	background-color: #fff;
+}
+
+.profile-pic {
+	border-radius: 50%;
+	height: 15em;
+	margin-bottom: 2em;
+}
+
+.arrow {
+	font-size: 5em;
+	margin-top: -0.7em;
+}
+
+.card-container {
+	padding: 3rem;
+	background-color: #001a30;
+}
+
+.projects-heading {
+	padding-bottom: 1rem;
+	color: #fff;
+}
+
+.card-img-top {
+    object-fit: cover;
+}
+
+.card.mb-3 {
+	border: none;
+	
+}
+
+.social-media {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	background-color: #001323;
+}
+
+.social-icons {
+	max-width: 5em;
+	padding-top: 3em;
+	
+}
+
+.tooltip.bottom {
+	padding-top: 5em !important;
+}
+
+.tooltip{
+	padding-top: 1em;
+}
+
+.arrow{
+	padding-top: 1em;
+}
+
+.btn-outline-secondary.btn-mailto {
+	color: #fff;
+	border-color: #fff;
+}
+
+.footer-header {
+	color: #fff;
+}
+
+.card-row {
+	margin-bottom: 1rem;
+}
+
+a.social {
+	color: #fff;
+}
+
+
+footer {
+
+}
+
+.footer-container {
+	padding-top: 3rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-bottom: 3rem;
+	background-color: #232323;
+}
