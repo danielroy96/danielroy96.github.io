@@ -12,6 +12,13 @@ body {
 	background-color: #fff;
 }
 
+.vertical-center {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	flex-direction: column;
+}
+
 .profile-pic {
 	border-radius: 50%;
 	height: 15em;
@@ -19,8 +26,14 @@ body {
 }
 
 .arrow {
-	font-size: 5em;
+	font-size: 5rem;
 	margin-top: -0.7em;
+	padding-top: 1em;
+	color: inherit;
+}
+
+.arrow:hover, .arro:focus {
+	color: inherit;
 }
 
 .card-container {
@@ -30,6 +43,7 @@ body {
 
 .projects-heading {
 	padding-bottom: 1rem;
+	padding-top: 2rem;
 	color: #fff;
 }
 
@@ -62,9 +76,6 @@ body {
 	padding-top: 1em;
 }
 
-.arrow{
-	padding-top: 1em;
-}
 
 .btn-outline-secondary.btn-mailto {
 	color: #fff;

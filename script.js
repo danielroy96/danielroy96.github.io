@@ -4,4 +4,10 @@ $(document).ready(function() {
 	$(window).scroll(function(){
     	$(".arrow").css("opacity", 1 - $(window).scrollTop() / 250);
   	});
+
+  	$('#scroll-hit').click(function() {
+	    $('html, body').animate({
+        	scrollTop: $("#scroll-target").offset().top - $("#scroll-end").height()
+    	}, 1000);
+  	});
 });

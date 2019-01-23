@@ -11,14 +11,14 @@
 	</head>
 	<body>
 		<main role=main>
-			<section class="jumbotron text-center">
+			<section class="jumbotron text-center vertical-center">
 				<img src="me.jpg" class="profile-pic">
 				<h1 class=jumbotron-heading>Hi, I'm Dan.</h1>
 				<p class="lead text-muted">I'm a programmer and web developer at <a href="http://www.fivium.co.uk/">Fivium</a> in London.</p>
-				<p class="arrow"><i class="fas fa-angle-down"></i></p>
+				<p class="arrow" id="scroll-hit"><a class="arrow" href="#"><i class="fas fa-angle-down"></i></a></p>
 			</section>
-			<div class="card-container" data-aos="fade-up" data-aos-duration="600">
-				<div class="row projects-heading">
+			<div id="scroll-target" class="card-container" data-aos="fade-up" data-aos-duration="600">
+				<div id="scroll-end" class="row projects-heading">
 					<h3>Recent projects</h3>
 				</div>
 				<div class="row card-row">
@@ -120,10 +120,19 @@
 		        </ul>
 			</div>
 		</footer>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="script.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58926880-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-58926880-2');
+		</script>
 	</body>
 </html>
