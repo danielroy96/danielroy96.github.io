@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   	$('#scroll-hit').click(function() {
 	    $('html, body').animate({
-        	scrollTop: $("#scroll-target").offset().top - $("#scroll-end").height()
+        	scrollTop: $("#scroll-target").offset().top
     	}, 1000);
   	});
 });
