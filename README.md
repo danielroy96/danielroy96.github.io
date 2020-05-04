@@ -1,2 +1,2 @@
-# danroy-co-uk
+# danroy.co.uk
 My website @ danroy.co.uk

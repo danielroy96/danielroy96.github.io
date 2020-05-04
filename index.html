@@ -1,50 +1,77 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	  	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-		<link rel=stylesheet href="style.css">
-		<title>Dan Roy</title>
-	</head>
-	<body>
-		<main role=main>
-			<section class="text-center vertical-center">
-				<img src="me.jpg" class="profile-pic">
-				<h1 class=jumbotron-heading>Hi, I'm Dan.</h1>
-				<p class="lead text-muted">I'm a programmer and web developer at <a href="http://www.fivium.co.uk/">Fivium</a> in London.</p>
-				<!-- <p class="arrow" id="scroll-hit"><a class="arrow" href="#"><i class="fas fa-angle-down"></i></a></p> -->
-				<ul class="nav justify-content-center text-muted">
-				  <li class="nav-item">
-				    <a class="nav-link fab fa-github" href="https://github.com/danielroy96"></a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link fab fa-linkedin-in" href="https://www.linkedin.com/in/danroy56/"></a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link fab fa-facebook" href="https://www.facebook.com/daniel.roy505"></a></li>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link fab fa-spotify" href="https://open.spotify.com/user/1134802230?si=15fAZHWARv6Ecvea1WbN-g"></a>
-				  </li>
-				</ul>
-			</section>
-		</main>
-		<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script src="script.js"></script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58926880-2"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+<head>
+  <title>Dan Roy</title>
 
-		  gtag('config', 'UA-58926880-2');
-		</script>
-	</body>
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css"/>
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <nav class="uk-navbar-transparent uk-light" uk-navbar>
+
+    <div class="uk-navbar-left">
+      <ul class="uk-navbar-nav">
+        <li class="uk-active"><a href="#"><b>Dan Roy</b></a></li>
+      </ul>
+    </div>
+
+    <div class="uk-navbar-left">
+      <ul class="uk-navbar-nav" uk-switcher="connect: .content-selector">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="uk-navbar-right">
+      <ul class="uk-navbar-nav">
+        <li class="uk-active"><a href="https://github.com/danielroy96" uk-icon="github"></a></li>
+        <li class="uk-active"><a href="https://www.linkedin.com/in/danroy56/" uk-icon="linkedin"></a></li>
+        <li class="uk-active"><a href="https://www.facebook.com/daniel.roy505" uk-icon="facebook"></a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="uk-container uk-container-expand uk-light">
+
+    <div class="uk-grid" uk-grid>
+      <div class="uk-padding uk-width-auto@m">
+        <img class="" data-src="me.jpg" width="150" height="150" alt="" uk-img>
+      </div>
+
+      <ul class="uk-switcher uk-margin content-selector uk-width-expand@m">
+
+        <li class="uk-padding uk-container-xsmall">
+          <h2>Hi, I'm Dan.</h2>
+          <p class="uk-text-lead">I'm a software developer at <a href="http://www.fivium.co.uk/">Fivium</a> in London.</p>
+          <p>
+            Currently, I'm working with Java, Spring Boot, Vue.js and Oracle database, as part of a team rebuilding our
+            product in a new technology stack, as well as upskilling the rest of our team.
+          </p>
+          <p>
+            I graduated from the University of Surrey in 2018 with a 2:1 BSc Computer Science (Hons), having completed a 1 year industrial placement as a Developer at the
+            <a href="http://www.ogauthority.co.uk/">Oil and Gas Authority.</a>
+          </p>
+        </li>
+
+        <li class="uk-padding">
+          <h2>Want to contact me?</h2>
+          <p>I occasionally take on freelance work. Feel free to send me an email: <a href="mailto:hello@danroy.co.uk">hello@danroy.co.uk</a></p>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js"></script>
+
+</body>
 </html>
